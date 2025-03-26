@@ -42,7 +42,7 @@ export Mandatory_theme="argon"              # 将bootstrap替换您需要的主�
 export Default_theme="argon"                # 多主题时,选择某主题为默认第一主题 (填写主题名称,填0为不作修改)
 
 # 旁路由选项
-export Gateway_Settings="0"                 # 旁路由设置 IPv4 网关(填入您的网关IP为启用)(填0为不作修改)
+export Gateway_Settings="192.168.1.1"                 # 旁路由设置 IPv4 网关(填入您的网关IP为启用)(填0为不作修改)
 export DNS_Settings="0"                     # 旁路由设置 DNS(填入DNS，多个DNS要用空格分开)(填0为不作修改)
 export Broadcast_Ipv4="0"                   # 设置 IPv4 广播(填入您的IP为启用)(填0为不作修改)
 export Disable_DHCP="0"                     # 旁路由关闭DHCP功能(1为启用命令,填0为不作修改)
@@ -98,10 +98,10 @@ export kernel_usage="stable"
 
 
 # 修改插件名字
-# sed -i 's/"终端"/"TTYD"/g' `egrep "终端" -rl ./`
+sed -i 's/"终端"/"TTYD"/g' `egrep "终端" -rl ./`
 # sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
 # sed -i 's/"网络存储"/"NAS"/g' `egrep "网络存储" -rl ./`
-# sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `egrep "Turbo ACC 网络加速" -rl ./`
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `egrep "Turbo ACC 网络加速" -rl ./`
 # sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
 # sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
 # sed -i 's/"TTYD 终端"/"TTYD"/g' `egrep "TTYD 终端" -rl ./`
